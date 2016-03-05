@@ -123,4 +123,7 @@ dependencies {
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:0.20.+"
     compile project(':react-native-facebook-login')
+    compile project(':react-native-image-picker')
+    compile project(':react-native-fileupload')
+    compile project(':RNMaterialKit')
 }

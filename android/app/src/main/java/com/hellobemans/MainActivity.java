@@ -5,6 +5,9 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
 import com.magus.fblogin.FacebookLoginPackage;
+import com.imagepicker.ImagePickerPackage;
+import com.yoloci.fileupload.FileUploadPackage;
+import com.github.xinthink.rnmk.ReactMaterialKitPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -38,6 +41,9 @@ public class MainActivity extends ReactActivity {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage()
         ,new FacebookLoginPackage()
+        ,new ImagePickerPackage(this)
+        ,new FileUploadPackage()
+        ,new ReactMaterialKitPackage()
       );
     }
 }

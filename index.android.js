@@ -21,6 +21,9 @@ import React, {
   AlertIOS,
   TextInput,
   ViewPagerAndroid,
+  Switch,
+  SliderIOS,
+  NativeModules,
 } from 'react-native';
 
 
@@ -793,22 +796,23 @@ var LoginPage = React.createClass({
         <FBLogin
           onLogin={
             function(e) {
-              alert(e)
+              alert(JSON.stringify(e));
+              this.onLogin
             }
           }
           onLogout={
             function(e) {
-              alert(e);
+              alert(JSON.stringify(e));
             }
           }
           onCancel={
             function(e) {
-              alert(e);
+              alert(JSON.stringify(e));
             }
           }
           onPermissionsMissing={
             function(e) {
-              console.log(e)
+              console.log(JSON.stringify(e));
             }
           }
         />
@@ -840,33 +844,63 @@ const login_styles = StyleSheet.create({
 
 //----------------------------------------------------------------------
 
+
+var ImagePickerManager = NativeModules.ImagePickerManager;
+
+
+
+var TrainerMessage = React.createClass({
+  getInitialState:function() {
+    return null;
+  }
+  , render: function() {
+    return (
+      <View style={{flex:1, marginTop:55}}>
+        <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
+            onPress={this.onCallGallery}>
+          <Text style={{color: 'black', margin: 10,}}>
+            갤러리
+          </Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+});
+
+
+
+
+//----------------------------------------------------------------------
+
 var BookingTrainer = function () {
     alert('BookingTrainer')
 }
+
+
+
+
+
+var ImageButton = require('./src/components/common/imageButton');
+
+var backIcon = require('./src/img/btn-back.png');
+var infoIcon = require('./src/img/btn-info.png');
+var memberIcon = require('./src/img/btn-member.png');
+var leaveIcon = require('./src/img/btn-leave.png');
+var startMessagingIcon = require('./src/img/btn-start-message.png');
+var inviteIcon = require('./src/img/btn-invite.png');
 
 const AwesomeButton = require('react-native-awesome-button');
 var NavigationBar = require('react-native-navbar');
 var NavigationBarRouteMapper = {
 
   LeftButton(route, navigator, index, nextState) {
-    if (route.id === 0)
-      return (      
-        <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
-            onPress={() => navigator.pop()}>
-          <Text style={{color: 'white', margin: 10,}}>
-            이전
-          </Text>
-        </TouchableOpacity>
-      );
-
-    else if (route.id === 1 || route.id === 2)
-      return (      
-        <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
-            onPress={() => navigator.pop()}>
-          <Text style={{color: 'white', margin: 10,}}>
-            이전
-          </Text>
-        </TouchableOpacity>
+    if (route.id === 0 || route.id === 1 || route.id === 2 || route.id === 9 || route.id === 11)
+      return (
+        <ImageButton
+            underlayColor={'#4e4273'}
+            onPress={() => navigator.pop()}
+            imageStyle={styles.imageButton}
+            image={backIcon} />
       );
   },
 
@@ -882,6 +916,12 @@ var NavigationBarRouteMapper = {
     else if (route.id === 2)
       title = '지역 선택';
 
+    else if (route.id === 9)
+      title = '대화 목록';
+
+    else if (route.id === 11)
+      title = '트레이너';
+
     return (
       <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}>
         <Text style={{color: 'white', margin: 10, fontSize: 20}}>
@@ -893,25 +933,94 @@ var NavigationBarRouteMapper = {
 
 
   RightButton(route, navigator, index, nextState) {
-     if (route.id === 0)
+    if (route.id === 0)
       return (
         <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
-            onPress={() => navigator.push({id: 2})}>
+          onPress={() => navigator.push({id: 2})}>
           <Text style={{color: 'white', margin: 10,}}>Location</Text>
         </TouchableOpacity>
       );
-     // 일단 북마크 기능은 제외
-     // else if (route.id === 1)
-     //  return (
-     //    <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
-     //        onPress={BookingTrainer}>
-     //      <Text style={{color: 'white', margin: 10,}}>Book</Text>
-     //    </TouchableOpacity>
-     //  );
+      // 일단 북마크 기능은 제외
+      // else if (route.id === 1)
+      //  return (
+      //    <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
+      //        onPress={BookingTrainer}>
+      //      <Text style={{color: 'white', margin: 10,}}>Book</Text>
+      //    </TouchableOpacity>
+      //  );
+    else if (route.id === 11)
+      return (
+        <View style={{flex:1, flexDirection:'row'}}>
+        <ImageButton
+            underlayColor={'#4e4273'}
+            onPress={() => navigator.pop()}
+            imageStyle={{width: 30, height: 30, marginLeft:10, marginTop:10}}
+            image={leaveIcon} />
+        <ImageButton
+            underlayColor={'#4e4273'}
+            onPress={() => navigator.pop()}
+            imageStyle={{width: 30, height: 30, marginLeft:10, marginTop:10}}
+            image={leaveIcon} />
+        </View>
+      );
+    
      else
       return null;
   },
 };
+
+
+var Main = require('./src/main');
+var Signin = require('./src/components/authentication/signin');
+var Index = require('./src/components/chat/index');
+var Info = require('./src/components/chat/info');
+var User = require('./src/components/chat/user');
+var Messaging = require('./src/components/chat/messaging');
+var OpenChat = require('./src/components/chat/openChat');
+var Chat = require('./src/components/chat/chat');
+var Members = require('./src/components/chat/members');
+
+
+
+
+var sendbird = require('sendbird');
+var Chat = require('./src/components/chat/chat');
+var appId = 'A7A2672C-AD11-11E4-8DAA-0A18B21C2D82';
+
+
+var Chatting = React.createClass({
+  getInitialState:function() {
+    return {username : 'din'};
+  }, 
+  componentDidMount: function() {
+    sendbird.init({
+      app_id: appId,
+      guest_id: this.state.username,
+      user_name: this.state.username,
+      image_url: "",
+      access_token: "",
+      successFunc: (data) => {
+        //this.props.navigator.immediatelyResetRouteStack([{ name: 'index' }]);
+        this.props.navigator.immediatelyResetRouteStack([{ 'id': 6 }]);
+        // this.props.navigator.push({id : 6});
+      },
+      errorFunc: (status, error) => {
+        alert('sendbird.init error')
+
+        this.setState({
+          username: '',
+          errorMessage: error
+        });
+        return;
+      }
+    });
+  },
+  render: function() {
+    return (
+      <Text> Chatting </Text>
+    );
+  }
+});
 
 
 
@@ -929,13 +1038,40 @@ var App = React.createClass({
     } else if (route.id === 2) {
       return <SelectLocation navigator={navigator}/>
 
+    } else if (route.id === 4) {
+      return <TrainerMessage navigator={navigator}/>
+
+    } else if (route.id === 5) {
+      return <Signin username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 6) {
+      return <Index username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 7) {
+      return <Info username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 8) {
+      return <User username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 9) {
+      return <Messaging username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 10) {
+      return <OpenChat username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 11) {
+      return <Chat username={'din'} navigator={navigator}/>
+
+    } else if (route.id === 12) {
+      return <Members username={'din'} navigator={navigator}/>
+
     }
   },
 
   render : function() {
     return (
       <Navigator
-        initialRoute={{id :0}}
+        initialRoute={{id :3}}
         renderScene={this._renderScene}
         configureScene={this._configureScene}
         navigationBar={
