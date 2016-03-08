@@ -10,7 +10,6 @@ var {
 } = React;
 import Popup from 'react-native-popup';
 
-var TopBar = require('../common/topBar');
 var ChatBox = require('../common/chatBox');
 var sendbird = require('sendbird');
 
@@ -38,51 +37,22 @@ module.exports = React.createClass({
     if (this.state.channel.isMessaging) {
       return (
         <View style={styles.container}>
-          <TopBar
-            onBackPress={this.onBackPress}
-            messaging={{
-              onMemberInvitePress: this.onMemberInvitePress,
-              onMemberListPress: this.onMemberListPress,
-              onLeaveChannelPress: this.onLeaveChannelPress
-            }}
-            title={this.state.channel.name}
-          />
-
           <View style={styles.chatContainer}>
             <ChatBox />
           </View>
-
           <Popup ref={(popup) => {this.popup = popup}} />
         </View>
       );
     } else {
       return (
         <View style={styles.container}>
-          <TopBar
-            onBackPress={this.onBackPress}
-            openChat={{
-              onMemberListPress: this.onMemberListPress,
-              onLeaveChannelPress: this.onLeaveChannelPress
-            }}
-            title={this.state.channel.name}
-          />
-
           <View style={styles.chatContainer}>
             <ChatBox />
           </View>
-
           <Popup ref={(popup) => {this.popup = popup}} />
         </View>
       );
     }
-  },
-  onMemberInvitePress: function() {
-    // this.props.navigator.push({name: 'user'});
-    this.props.navigator.push({'id': 8});
-  },
-  onMemberListPress: function() {
-    // this.props.navigator.push({name: 'members'});
-    this.props.navigator.push({'id': 12});
   },
   onLeaveChannelPress: function() {
     this.popup.confirm({
@@ -114,8 +84,8 @@ module.exports = React.createClass({
   onBackPress: function() {
     if (this.state.channel.isMessaging) {
       // this.props.navigator.immediatelyResetRouteStack([{name: 'index'}, {name: 'messaging'}]);
-      this.props.navigator.immediatelyResetRouteStack([{'id': 6}, {'id' : 9}]);
-      // this.props.navigator.push({'id': 9});
+      this.props.navigator.immediatelyResetRouteStack([{'id' : 'Messaging'}]);
+      // this.props.navigator.push({'id': 'Messaging'});
     } else {
       this.props.navigator.pop();
     }

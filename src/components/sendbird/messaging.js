@@ -9,7 +9,6 @@ var {
   StyleSheet
 } = React;
 
-var TopBar = require('../common/topBar');
 var sendbird = require('sendbird');
 var searchIcon = require('../../img/icon-search.png');
 var PULLDOWN_DISTANCE = 40;
@@ -60,11 +59,6 @@ module.exports = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <TopBar
-          onBackPress={this.onBackPress}
-          title='Messaging'
-        />
-
         <View style={styles.listContainer}>
           <ListView
             dataSource={this.state.dataSource}
@@ -97,7 +91,7 @@ module.exports = React.createClass({
           sendbird.connect({
             successFunc: (data) => {
               //this.props.navigator.push({ name: 'chat' });
-              this.props.navigator.push({ id: 11 });
+              this.props.navigator.push({ id: 'Chat' });
             },
             errorFunc: (status, error) => {
               console.log(status, error);

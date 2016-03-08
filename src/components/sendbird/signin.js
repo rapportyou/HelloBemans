@@ -91,11 +91,7 @@ module.exports = React.createClass({
       image_url: "",
       access_token: "",
       successFunc: (data) => {
-        // this.props.navigator.immediatelyResetRouteStack([{ name: 'index' }]);
-        this.props.navigator.immediatelyResetRouteStack([{ 'id' : 9 }]);
-        // this.props.navigator.push({id : 6});
-        // this.props.navigator.push({id : 8});
-        // this.props.navigator.push({id : 9});
+        this.props.navigator.immediatelyResetRouteStack([{ 'id' : 'Messaging' }]);
       },
       errorFunc: (status, error) => {
         this.setState({

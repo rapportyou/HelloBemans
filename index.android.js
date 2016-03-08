@@ -41,10 +41,7 @@ var TrainerListData = {
             "user_name": "홍길동",
             "location": '강남구',
             "posters": {
-                "thumbnail": "http://i.telegraph.co.uk/multimedia/archive/02655/PD68583783_dtho201_2655530b.jpg",
-                "profile": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "detailed": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "original": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg"
+                "thumbnail": "https://images.unsplash.com/photo-1428471598907-e50b401c07b4?crop=entropy&dpr=2&fit=crop&fm=jpg&h=1125&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1925"
             }
         },
         {
@@ -52,10 +49,7 @@ var TrainerListData = {
             "user_name": "홍길순",
             "location": '동작구',
             "posters": {
-                "thumbnail": "http://assets3.sparkpeople.com/news/genericpictures/BigPictures/gym_workout.jpg",
-                "profile": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "detailed": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "original": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg"
+                "thumbnail": "http://images.freeimages.com/images/previews/f0b/gym-1238643.jpg",
             }
         },
         {
@@ -63,10 +57,7 @@ var TrainerListData = {
             "user_name": "김길동",
             "location": '서초구',
             "posters": {
-                "thumbnail": "http://i.telegraph.co.uk/multimedia/archive/02774/James-Duigan-in-th_2774059b.jpg",
-                "profile": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "detailed": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "original": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg"
+                "thumbnail": "https://snap-photos.s3.amazonaws.com/img-thumbs/960w/O8HQW8Q465.jpg",
             }
         },
         {
@@ -74,10 +65,7 @@ var TrainerListData = {
             "user_name": "박길동",
             "location": '은평구',
             "posters": {
-                "thumbnail": "http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/7_most_effective_exercises_slideshow/istock_photo_of_personal_trainer.jpg",
-                "profile": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "detailed": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "original": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg"
+                "thumbnail": "https://static.pexels.com/photos/36776/fitness-strength-strong-male-large.jpg",
             }
         },
         {
@@ -85,10 +73,7 @@ var TrainerListData = {
             "user_name": "최길동",
             "location": '강동구',
             "posters": {
-                "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVKG1f0rtD0HV38CFpgAfUiFPQiZI9tGVcEb5rjgR3frxHTmk6",
-                "profile": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "detailed": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg",
-                "original": "http://resizing.flixster.com/58X_FeLy7hFX0SuCJxXQbryJFpY=/54x80/dkpu1ddg7pbsk.cloudfront.net/movie/11/48/82/11488237_ori.jpg"
+                "thumbnail": "https://pixabay.com/static/uploads/photo/2015/04/12/21/12/male-719539_960_720.jpg",
             }
         },
     ]
@@ -108,11 +93,23 @@ var TrainerDetailData = {
     {
       id: 0,
       type:'image',
-      source: 'http://i.telegraph.co.uk/multimedia/archive/02655/PD68583783_dtho201_2655530b.jpg',
+      source: 'https://pixabay.com/static/uploads/photo/2015/09/18/11/45/man-945481_960_720.jpg',
       text: '안녕하세요. 트레이너 홍길동 입니다. 저는 현재 숭실대 생활스포츠학과에 재학중입니다.',
     },
     {
       id: 1,
+      type:'image',
+      source: 'https://pixabay.com/static/uploads/photo/2015/09/09/16/16/man-931724_960_720.jpg',
+      text: '생활체육지도사 2급 자격증을 취득했고요',
+    },
+    {
+      id: 2,
+      type:'image',
+      source: 'https://snap-photos.s3.amazonaws.com/img-thumbs/960w/9WRTTVGZOS.jpg',
+      text: '취미는 사이클 입니다.',
+    },
+    {
+      id: 3,
       type:'youtube',
       source: 'https://www.youtube.com/watch?v=axnq_p9GbBc',
       text: '',
@@ -633,7 +630,7 @@ var TrainerList = React.createClass({
   },
 
   selectTainer() {
-    this.props.navigator.push({id : 1});
+    this.props.navigator.push({id : 'TrainerDetail'});
   },
 
   renderMovie: function(trainer) {
@@ -854,10 +851,10 @@ var LoginPage = React.createClass({
       if(itypeof(token) === 'string' && token.length > 0) {
         // 서버로 부터 데이터를 가져와서 리턴
         //'https://graph.facebook.com/v2.2/me?access_token=' + token;
-        // this.props.navigator.push({id : 0, profile : profile});
+        // this.props.navigator.push({id : 'TrainerList', profile : profile});
 
         var profile = {"id":"1108291922571019","name":"홍성진","email":"rapportyou@gmail.com","first_name":"성진","last_name":"홍","age_range":{"min":21},"link":"https://www.facebook.com/app_scoped_user_id/1108291922571019/","picture":{"data":{"is_silhouette":true,"url":"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/…3051da72ab&oe=575E452F&__gda__=1465817095_6dd02167bc923b3c12caebfce4d6ce18"}},"gender":"male","locale":"ko_KR","timezone":9,"updated_time":"2016-02-25T07:20:55+0000","verified":true};
-        this.props.navigator.push({id : 0, profile : profile});
+        this.props.navigator.push({id : 'TrainerList', profile : profile});
       }
     }.bind(this));
   }
@@ -981,10 +978,8 @@ var NavigationBar = require('react-native-navbar');
 var NavigationBarRouteMapper = {
 
   LeftButton(route, navigator, index, nextState) {
-    if (route.id === 0)
-      return null;
-
-    else if (route.id === 1 || route.id === 2 || route.id === 9 || route.id === 11)
+    if (route.id === 'TrainerDetail' || route.id === 'SelectLocation' || 
+             route.id === 'TrainerMessage' || route.id === 'Chat')
       return (
         <ImageButton
             underlayColor={'#4e4273'}
@@ -992,24 +987,34 @@ var NavigationBarRouteMapper = {
             imageStyle={styles.imageButton}
             image={backIcon} />
       );
+    else if ( route.id === 'Messaging')
+      return (
+        <ImageButton
+            underlayColor={'#4e4273'}
+            onPress={() => navigator.push({id:'TrainerList'})}
+            imageStyle={styles.imageButton}
+            image={backIcon} />
+      );
+
+    return null;
   },
 
 
   Title(route, navigator, index, nextState) {
     var title = '';
-    if (route.id === 0)
+    if (route.id === 'TrainerList')
       title = 'Hello Bemans';
 
-    else if (route.id === 1)
+    else if (route.id === 'TrainerDetail')
       title = '트레이너 소개';
 
-    else if (route.id === 2)
+    else if (route.id === 'SelectLocation')
       title = '지역 선택';
 
-    else if (route.id === 9)
+    else if (route.id === 'Messaging')
       title = '대화 목록';
 
-    else if (route.id === 11)
+    else if (route.id === 'Chat')
       title = '트레이너';
 
     return (
@@ -1023,14 +1028,14 @@ var NavigationBarRouteMapper = {
 
 
   RightButton(route, navigator, index, nextState) {
-    if (route.id === 0)
+    if (route.id === 'TrainerList')
       return (
         <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
-          onPress={() => navigator.push({id: 2})}>
+          onPress={() => navigator.push({id: 'SelectLocation'})}>
           <Text style={{color: 'white', margin: 10,}}>Location</Text>
         </TouchableOpacity>
       );
-      // 일단 북마크 기능은 제외
+      // Remove Bookmark Function
       // else if (route.id === 1)
       //  return (
       //    <TouchableOpacity style={{flex: 1, justifyContent: 'center'}}
@@ -1038,136 +1043,158 @@ var NavigationBarRouteMapper = {
       //      <Text style={{color: 'white', margin: 10,}}>Book</Text>
       //    </TouchableOpacity>
       //  );
-    else if (route.id === 11)
-      return (
-        <View style={{flex:1, flexDirection:'row'}}>
-        <ImageButton
-            underlayColor={'#4e4273'}
-            onPress={() => navigator.pop()}
-            imageStyle={{width: 30, height: 30, marginLeft:10, marginTop:10}}
-            image={leaveIcon} />
-        <ImageButton
-            underlayColor={'#4e4273'}
-            onPress={() => navigator.pop()}
-            imageStyle={{width: 30, height: 30, marginLeft:10, marginTop:10}}
-            image={leaveIcon} />
-        </View>
-      );
-    
      else
       return null;
   },
 };
 
 
-var Main = require('./src/main');
-var Signin = require('./src/components/authentication/signin');
-var Index = require('./src/components/chat/index');
-var Info = require('./src/components/chat/info');
-var User = require('./src/components/chat/user');
-var Messaging = require('./src/components/chat/messaging');
-var OpenChat = require('./src/components/chat/openChat');
-var Chat = require('./src/components/chat/chat');
-var Members = require('./src/components/chat/members');
+var Signin = require('./src/components/sendbird/signin');
+var Messaging = require('./src/components/sendbird/messaging');
+var Chat = require('./src/components/sendbird/chat');
 
 
+var Drawer = require('react-native-drawer');
 
 
-var sendbird = require('sendbird');
-var Chat = require('./src/components/chat/chat');
-var appId = 'A7A2672C-AD11-11E4-8DAA-0A18B21C2D82';
-
-
-var Chatting = React.createClass({
-  getInitialState:function() {
-    return {username : 'din'};
-  }, 
-  componentDidMount: function() {
-    sendbird.init({
-      app_id: appId,
-      guest_id: this.state.username,
-      user_name: this.state.username,
-      image_url: "",
-      access_token: "",
-      successFunc: (data) => {
-        //this.props.navigator.immediatelyResetRouteStack([{ name: 'index' }]);
-        this.props.navigator.immediatelyResetRouteStack([{ 'id': 6 }]);
-        // this.props.navigator.push({id : 6});
-      },
-      errorFunc: (status, error) => {
-        alert('sendbird.init error')
-
-        this.setState({
-          username: '',
-          errorMessage: error
-        });
-        return;
-      }
-    });
+var MenuButton = React.createClass({
+  onPress() {
+    this.props.closeDrawer();
+    this.props.navigator()
   },
-  render: function() {
+  render:function() {
     return (
-      <Text> Chatting </Text>
-    );
+      <TouchableOpacity style={{flex: 1, justifyContent: 'center'}} onPress={this.onPress}>
+        <Text style={{color: 'white', margin: 10, fontSize: 20}}>
+          {this.props.text}
+        </Text>
+      </TouchableOpacity>
+    )
+  }
+})
+
+
+var ControlPanel = React.createClass({
+
+  render:function() {
+    return (
+      <ScrollView style={{flex: 1, backgroundColor: 'gray',}}>
+        <MenuButton navigator={this.props.navSignin} closeDrawer={this.props.closeDrawer} text={'Chat'}/>
+        <MenuButton navigator={this.props.navLogout} closeDrawer={this.props.closeDrawer} text={'Logout'}/>
+
+      </ScrollView>
+    )
   }
 });
 
 
 
+
+
 var App = React.createClass({
   _renderScene : function(route, navigator) {
-    if (route.id === 3) {
+    if (route.id === 'LoginPage') {
       return <LoginPage navigator={navigator}/>
 
-    } else if (route.id === 0) {
+    } else if (route.id === 'TrainerList') {
       return <TrainerList navigator={navigator}/>
 
-    } else if (route.id === 1) {
+    } else if (route.id === 'TrainerDetail') {
       return <TrainerDetail navigator={navigator}/>
 
-    } else if (route.id === 2) {
+    } else if (route.id === 'SelectLocation') {
       return <SelectLocation navigator={navigator}/>
 
-    } else if (route.id === 4) {
+    } else if (route.id === 'TrainerMessage') {
       return <TrainerMessage navigator={navigator}/>
 
-    } else if (route.id === 5) {
+    } else if (route.id === 'Signin') {
       return <Signin username={'din'} navigator={navigator}/>
 
-    } else if (route.id === 6) {
-      return <Index username={'din'} navigator={navigator}/>
-
-    } else if (route.id === 7) {
-      return <Info username={'din'} navigator={navigator}/>
-
-    } else if (route.id === 8) {
-      return <User username={'din'} navigator={navigator}/>
-
-    } else if (route.id === 9) {
+    } else if (route.id === 'Messaging') {
       return <Messaging username={'din'} navigator={navigator}/>
 
-    } else if (route.id === 10) {
-      return <OpenChat username={'din'} navigator={navigator}/>
-
-    } else if (route.id === 11) {
+    } else if (route.id === 'Chat') {
       return <Chat username={'din'} navigator={navigator}/>
-
-    } else if (route.id === 12) {
-      return <Members username={'din'} navigator={navigator}/>
 
     }
   },
 
+  openDrawer(){
+    this.drawer.open()
+  },
+
   render : function() {
+    // Default Full Drawer
+    //*
     return (
-      <Navigator
-        initialRoute={{id :3}}
-        renderScene={this._renderScene}
-        configureScene={this._configureScene}
-        navigationBar={
-          <Navigator.NavigationBar style={{backgroundColor: '#246dd5'}}
-              routeMapper={NavigationBarRouteMapper} />}/>
+      <Drawer ref={c => this.drawer = c} 
+        content={
+          <ControlPanel 
+            navSignin={() => {this.navigator.push({id:'Signin'})}}
+            navLogout={()=>{this.navigator.push({id:'LoginPage'})}} 
+            closeDrawer={() => {this.drawer.close()}}/>
+        } >
+          <Navigator
+          ref={n => this.navigator = n}
+          initialRoute={{id :'LoginPage'}}
+          renderScene={this._renderScene}
+          configureScene={this._configureScene}
+          navigationBar={
+            <Navigator.NavigationBar style={{backgroundColor: '#246dd5'}}
+                routeMapper={NavigationBarRouteMapper} />}/>
+      </Drawer>
     );
+    //*/
+
+    // Slack Style Drawer
+    /*
+    return (
+      <Drawer
+        type="static"
+        content={<ControlPanel />}
+        openDrawerOffset={100}
+        styles={{main: {shadowColor: "#000000", shadowOpacity: 0.4, shadowRadius: 3}}}
+        tweenHandler={Drawer.tweenPresets.parallax}>
+
+        <Navigator
+          initialRoute={{id :'LoginPage'}}
+          renderScene={this._renderScene}
+          configureScene={this._configureScene}
+          navigationBar={
+            <Navigator.NavigationBar style={{backgroundColor: '#246dd5'}}
+                routeMapper={NavigationBarRouteMapper} />}/>
+      </Drawer>
+    );
+    //*/
+
+    // Material Design Style Drawer
+    /*
+    return (
+      <Drawer
+        type="overlay"
+        content={<ControlPanel />}
+        tapToClose={true}
+        openDrawerOffset={0.2} // 20% gap on the right side of drawer
+        panCloseMask={0.2}
+        closedDrawerOffset={-3}
+        styles={{
+          drawer: {shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3},
+          main: {paddingLeft: 3}
+        }}
+        tweenHandler={(ratio) => ({
+          main: { opacity:(2-ratio)/2 }
+        })} >
+        <Navigator
+          initialRoute={{id :'LoginPage'}}
+          renderScene={this._renderScene}
+          configureScene={this._configureScene}
+          navigationBar={
+            <Navigator.NavigationBar style={{backgroundColor: '#246dd5'}}
+                routeMapper={NavigationBarRouteMapper} />}/>
+      </Drawer>
+    );
+    //*/
   }
 });
 
