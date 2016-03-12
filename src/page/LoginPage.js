@@ -35,15 +35,15 @@ module.exports = React.createClass({
   getInitialState: function() {
     return ( { userId:null, token:null } );
   },
+
   onLogin:function(data) {
     console.log(JSON.stringify(data));
-    //{"provider":"facebook","type":"success","profile":{"id":"1108291922571019","name":"홍성진","email":"rapportyou@gmail.com","first_name":"성진","last_name":"홍","age_range":{"min":21},"link":"https://www.facebook.com/app_scoped_user_id/1108291922571019/","picture":{"data":{"is_silhouette":true,"url":"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/…3051da72ab&oe=575E452F&__gda__=1465817095_6dd02167bc923b3c12caebfce4d6ce18"}},"gender":"male","locale":"ko_KR","timezone":9,"updated_time":"2016-02-25T07:20:55+0000","verified":true},"expiration":"2016-05-04T00:09:09.270+0900","token":"CAANNNMHrJ2EBAOONoZAerrpvZBQdWcSvESG4bTxACPmKxwspnQBZCANoYPPFRQXMKSV75ElmqtL3QZAVB9YHaceUXmppujSXddJkq7Dw8kZBjpVP8OCepcLPpDqvRW7VqD2oK9ZCawvFQiGxV7jOXHXIACwltlMvIZC9puiU4wvkVqZBYisHZArB52ZBQbmGpVXAhKA8xbY1AMcQZDZD"}
     /*
     {
       "provider": "facebook",
       "type": "success",
       "profile": {
-          "id": "1108291922571019",
+          "id": "xxxx",
           "name": "홍성진",
           "email": "rapportyou@gmail.com",
           "first_name": "성진",
@@ -51,7 +51,7 @@ module.exports = React.createClass({
           "age_range": {
               "min": 21
           },
-          "link": "https://www.facebook.com/app_scoped_user_id/1108291922571019/",
+          "link": "https://www.facebook.com/app_scoped_user_id/xxxx/",
           "picture": {
               "data": {
                   "is_silhouette": true,
@@ -65,32 +65,28 @@ module.exports = React.createClass({
           "verified": true
       },
       "expiration": "2016-05-04T00:09:09.270+0900",
-      "token": "CAANNNMHrJ2EBAOONoZAerrpvZBQdWcSvESG4bTxACPmKxwspnQBZCANoYPPFRQXMKSV75ElmqtL3QZAVB9YHaceUXmppujSXddJkq7Dw8kZBjpVP8OCepcLPpDqvRW7VqD2oK9ZCawvFQiGxV7jOXHXIACwltlMvIZC9puiU4wvkVqZBYisHZArB52ZBQbmGpVXAhKA8xbY1AMcQZDZD"
+      "token": "xxxx"
     }
     //*/
-    // 서버에 저장
+    // TODO : 서버에 저장
     var profile = data.profile;
     console.log(JSON.stringify(data.profile));
-    //{"id":"1108291922571019","name":"홍성진","email":"rapportyou@gmail.com","first_name":"성진","last_name":"홍","age_range":{"min":21},"link":"https://www.facebook.com/app_scoped_user_id/1108291922571019/","picture":{"data":{"is_silhouette":true,"url":"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/…3051da72ab&oe=575E452F&__gda__=1465817095_6dd02167bc923b3c12caebfce4d6ce18"}},"gender":"male","locale":"ko_KR","timezone":9,"updated_time":"2016-02-25T07:20:55+0000","verified":true}
-    // token : "CAANNNMHrJ2EBAOONoZAerrpvZBQdWcSvESG4bTxACPmKxwspnQBZCANoYPPFRQXMKSV75ElmqtL3QZAVB9YHaceUXmppujSXddJkq7Dw8kZBjpVP8OCepcLPpDqvRW7VqD2oK9ZCawvFQiGxV7jOXHXIACwltlMvIZC9puiU4wvkVqZBYisHZArB52ZBQbmGpVXAhKA8xbY1AMcQZDZD"
-    // token : "CAANNNMHrJ2EBAJi4qNQ1gIU2b2ffEbQY88B4D02CK40sbpSwoeJYEHOACfGYZAjcL9pu0K3ZCtECLUEPRXaAAjhVWGllzZCPGM9RoCfeK3AkyZCxCfmvcDJnQc6BF3Mnqgp7WrqEa4kW9KbaNLRIm7cdVMGQGwN6SyS5ZCxBQfkxrVVYhVf2HLzXO2ABO4hQZD"
-    this.props.navigator.push({id : 0, profile : profile});
-    // this.setState({userId : profile.id, token : data.token});
+    this.props.navigator.push({id : 'TrainerList', profile : profile});
   },
+
   componentWillMount:function() {
     FBLoginManager.getCurrentToken(function(token) {
-      //  토큰이 존재한다면
+      // TODO : 토큰이 존재한다면
       if(itypeof(token) === 'string' && token.length > 0) {
         // 서버로 부터 데이터를 가져와서 리턴
         //'https://graph.facebook.com/v2.2/me?access_token=' + token;
-        // this.props.navigator.push({id : 'TrainerList', profile : profile});
-
         var profile = {"id":"1108291922571019","name":"홍성진","email":"rapportyou@gmail.com","first_name":"성진","last_name":"홍","age_range":{"min":21},"link":"https://www.facebook.com/app_scoped_user_id/1108291922571019/","picture":{"data":{"is_silhouette":true,"url":"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/…3051da72ab&oe=575E452F&__gda__=1465817095_6dd02167bc923b3c12caebfce4d6ce18"}},"gender":"male","locale":"ko_KR","timezone":9,"updated_time":"2016-02-25T07:20:55+0000","verified":true};
         this.props.navigator.push({id : 'TrainerList', profile : profile});
       }
     }.bind(this));
-  }
-  , render:function() {
+  },
+
+  render:function() {
     var _this = this;
     var loginButton = <View/>;
 

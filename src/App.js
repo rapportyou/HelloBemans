@@ -24,61 +24,11 @@ import React, {
 
 
 
-//----------------------------------------------------------------------
-
-
-var TrainerDetail = require('./page/TrainerDetail');
-
-
-//----------------------------------------------------------------------
-
-//----------------------------------------------------------------------
-
-
-var TrainerList = require('./page/TrainerList')
-
-
-
-//----------------------------------------------------------------------
-
-
-
-
-
-
-
-var SelectLocation = require('./page/SelectLocation')
-
-
-
-var LoginPage = require('./page/LoginPage')
-
-
-
-
-//----------------------------------------------------------------------
-
-var BookingTrainer = function () {
-    alert('BookingTrainer')
-}
-
-
-
-
 
 var ImageButton = require('./components/common/imageButton');
 
-var backIcon = require('./img/btn-back.png');
-var infoIcon = require('./img/btn-info.png');
-var memberIcon = require('./img/btn-member.png');
-var leaveIcon = require('./img/btn-leave.png');
-var startMessagingIcon = require('./img/btn-start-message.png');
-var inviteIcon = require('./img/btn-invite.png');
-
-
-var NavigationBar = require('react-native-navbar');
 var NavigationBarRouteMapper = {
-
+  
   LeftButton(route, navigator, index, nextState) {
     if (route.id === 'TrainerDetail' || route.id === 'SelectLocation' || route.id === 'Chat')
       return (
@@ -150,15 +100,38 @@ var NavigationBarRouteMapper = {
 };
 
 
+
+// Image
+var backIcon = require('./img/btn-back.png');
+var infoIcon = require('./img/btn-info.png');
+var memberIcon = require('./img/btn-member.png');
+var leaveIcon = require('./img/btn-leave.png');
+var startMessagingIcon = require('./img/btn-start-message.png');
+var inviteIcon = require('./img/btn-invite.png');
+
+
+
+// Page
 var Signin = require('./components/sendbird/signin');
 var Messaging = require('./components/sendbird/messaging');
 var Chat = require('./components/sendbird/chat');
+var TrainerDetail = require('./page/TrainerDetail');
+var TrainerList = require('./page/TrainerList')
+var SelectLocation = require('./page/SelectLocation')
+var LoginPage = require('./page/LoginPage')
 
 
+
+// Components
 var Drawer = require('react-native-drawer');
 var DrawerComponent = require('./components/common/DrawerComponent')
+var NavigationBar = require('react-native-navbar');
 
 
+
+/**
+ *
+ */
 module.exports = React.createClass({
   _renderScene : function(route, navigator) {
     if (route.id === 'LoginPage') {

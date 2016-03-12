@@ -98,12 +98,14 @@ module.exports = React.createClass({
     var pages = TrainerDetailData.pages;
     //*
     var rows = [];
-    for (var i=0; i < pages.length; i++) {
+
+    var i = 0;
+    for (i=0; i < pages.length; i++) {
       var page = pages[i];
 
       if (page.type === 'image') {
         rows.push(
-          <View style={td_styles.slide}>
+          <View key={i} style={td_styles.slide}>
             <Image
               style={td_styles.slide_image}
               source={{uri: page.source}}>
@@ -113,9 +115,9 @@ module.exports = React.createClass({
         );
       } else if (page.type === 'youtube') {
         rows.push(
-          <WebView style={{flex:1, marginTop: 55, backgroundColor:'black'}}
+          <WebView key={i} style={{flex:1, marginTop: 55, backgroundColor:'black'}}
             ref={WEBVIEW_REF}
-            url={page.source}
+            source={{uri:page.source}}
             javaScriptEnabled={true}
             domStorageEnabled={true}
             decelerationRate="normal"
@@ -126,7 +128,7 @@ module.exports = React.createClass({
       }
     }
 
-    rows.push(<TrainerContact/>);
+    rows.push(<TrainerContact key={i} />);
 
     return (
       <Swiper index={0} loop={false} showsPagination={false} style={td_styles.wrapper}>

@@ -28,78 +28,43 @@ var review = {
       {
         "user_id" : 0,
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "user_nick" : "사용자김김김김김김김김김김김",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
+        "user_nick" : "User1",
+        "contnets" : "I trained once per week, I lose 1 pound",
         "review_date" : "2016-02-01 11:10:11"
       },
       {
         "user_id" : 1,
-        "user_nick" : "사용자",
+        "user_nick" : "User2",
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요.가나다라마바사아자차카타파하.기니디리미비시이지치키티피히.거너더러머버서어저처커터퍼허.갸냐댜랴먀뱌샤야자챠캬탸퍄햐.겨녀뎌려며벼셔여져쳐켜텨펴혀.",
+        "contnets" : "I like it",
         "review_date" : "2016-02-01 11:10:11"
       },
       {
         "user_id" : 2,
-        "user_nick" : "사용",
+        "user_nick" : "User3",
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
+        "contnets" : "This is what a awesome price",
         "review_date" : "2016-02-01 11:10:11"
       },
       {
         "user_id" : 3,
-        "user_nick" : "사용자",
+        "user_nick" : "User4",
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
+        "contnets" : "This trainer is so kind",
         "review_date" : "2016-02-01 11:10:11"
       },
       {
         "user_id" : 3,
-        "user_nick" : "사용자",
+        "user_nick" : "User5",
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
+        "contnets" : "He is beautiful Body",
         "review_date" : "2016-02-01 11:10:11"
       },
       {
         "user_id" : 3,
-        "user_nick" : "사용자",
+        "user_nick" : "User6",
         "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
-        "review_date" : "2016-02-01 11:10:11"
-      },
-      {
-        "user_id" : 3,
-        "user_nick" : "사용자",
-        "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
-        "review_date" : "2016-02-01 11:10:11"
-      },
-      {
-        "user_id" : 3,
-        "user_nick" : "사용자",
-        "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
-        "review_date" : "2016-02-01 11:10:11"
-      },
-      {
-        "user_id" : 3,
-        "user_nick" : "사용자",
-        "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
-        "review_date" : "2016-02-01 11:10:11"
-      },
-      {
-        "user_id" : 3,
-        "user_nick" : "사용자",
-        "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
-        "review_date" : "2016-02-01 11:10:11"
-      },
-      {
-        "user_id" : 3,
-        "user_nick" : "사용자",
-        "user_img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LIlZRtAPAaUxdChHGCDWVcoMxSJb0y3oorGFJj-WxqXU7Vq8og",
-        "contnets" : "일주일에 2번 받았는데 2Kg빠졌어요",
+        "contnets" : "He is professional",
         "review_date" : "2016-02-01 11:10:11"
       },
     ],
@@ -171,7 +136,7 @@ module.exports = React.createClass({
     }
 
     return (
-      <View style={{flex:1, flexDirection:'column', marginTop:10, marginBottom:10, backgroundColor:'white',}}>
+      <View style={{flex:1, flexDirection:'column', marginTop:10, marginBottom:10, marginTop:60, backgroundColor:'white',}}>
         <View style={{flex:3, flexDirection:'column'}}>
           <ListView
             dataSource={this.state.dataSource}
@@ -197,22 +162,22 @@ module.exports = React.createClass({
         </View>
 
         <View style={{flex:1, flexDirection:'row', justifyContent:'center', alignSelf:'center', alignItems:'center'}}>
-          <Text style={{fontSize: 20, fontWeight:'bold', paddingLeft:20, paddingRight:20,}}>홍길동(강남구)</Text>
+          <Text style={{fontSize: 20, fontWeight:'bold', paddingLeft:20, paddingRight:20,}}>홍길동 (강남구)</Text>
           <AwesomeButton  backgroundStyle={{flex: 1,  borderRadius: 5, paddingLeft:20, paddingRight:20, paddingTop:5, paddingBottom:5,}}
                         labelStyle={{color: 'white'}}
                         transitionDuration={200}
                         states={{
                           idle: {
-                            text: '북마크',
+                            text: 'Bookmark',
                             onPress: this.bookMarking,
                             backgroundColor: '#1155DD',
                           },
                           busy: {
-                            text: '북마크',
+                            text: 'Bookmark',
                             backgroundColor: '#002299',
                           },
                           success: {
-                            text: '북마크',
+                            text: 'Bookmark',
                             onPress: this.bookMarking,
                             backgroundColor: '#339944'
                           }
@@ -221,7 +186,7 @@ module.exports = React.createClass({
         </View>
 
         <View style={{flex:1, flexDirection:'column', justifyContent:'center', alignSelf:'center', alignItems:'center'}}>
-          <Text style={{fontSize: 30, fontWeight:'bold', paddingLeft:20, paddingRight:20,}}>￦20,000 / 시간</Text>
+          <Text style={{fontSize: 30, fontWeight:'bold', paddingLeft:20, paddingRight:20,}}>￦20,000 / Hour</Text>
         </View>
 
           <AwesomeButton  backgroundStyle={{flex: 1, paddingLeft:20, paddingRight:20, paddingTop:5, paddingBottom:10, marginBottom:10}}
@@ -229,12 +194,12 @@ module.exports = React.createClass({
                         transitionDuration={200}
                         states={{
                           idle: {
-                            text: '궁굼한거 물어보기',
+                            text: 'Chat with Trainer',
                             onPress: this.sendContact,
                             backgroundColor: '#1155DD',
                           },
                           busy: {
-                            text: '확인 중...',
+                            text: 'Wait ...',
                             backgroundColor: '#002299',
                             spinner: true,
                           },

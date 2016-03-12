@@ -31,7 +31,9 @@ module.exports = React.createClass({
     return (
       <ScrollView style={{flex: 1, backgroundColor: 'gray',}}>
         <MenuButton navigator={this.props.navSignin} closeDrawer={this.props.closeDrawer} text={'Chat'}/>
+        {/*
         <MenuButton navigator={this.props.navLogout} closeDrawer={this.props.closeDrawer} text={'Logout'}/>
+        */}
       </ScrollView>
     )
   }
