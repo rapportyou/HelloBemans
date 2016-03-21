@@ -24,3 +24,8 @@ there there is chat source too.
 but not apear in this demo video
 
 ![hellobemans](https://cloud.githubusercontent.com/assets/15629104/13723235/00316786-e8a2-11e5-8db5-323630a226af.gif)
+
+
+# Design Tool (Balsamiq Mockup)
+
+![Design Plan](https://cloud.githubusercontent.com/assets/15629104/13923983/f3bbdd94-efc5-11e5-8989-37d9b4c336bd.png)
